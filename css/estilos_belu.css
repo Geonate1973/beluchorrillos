@@ -1,0 +1,652 @@
+/* CSS Document */
+
+/* basicos */
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;}
+
+html, body {
+	padding:0;
+	margin:0;
+	height:100%;
+	}
+p {
+    font-family: 'Dosis', sans-serif;
+    margin-bottom: 20px;
+}
+
+.contenedor_general {
+	position:relative;
+	min-height:100%;
+		}
+
+/* HEADER */
+.contenedor_central{
+	margin:auto;
+	
+}
+
+
+.cabecero-empresa {
+    background-image: url("../img/foto_empresa.jpg");
+    background-size: cover;
+}
+
+
+.logo_movil {
+	display:none;}
+	
+.secreta {
+	width:200px;
+	margin: auto;}
+.grande{
+	font-size: 20px;}
+
+/* MENU SUPERIOR */
+
+header{
+	width:100%;
+		}
+
+#btn-menu{
+	display:none;}
+
+header label {
+	display:none;
+	width:30px;
+	height:30px;
+	padding:10px;
+	border-right:1px solid #fff;
+	}
+
+header label:hover {
+	cursor:pointer;
+	background:rgba(0,0,0,0.3);}
+
+.menu {
+	background: #DC7501;
+	transition:0.6s;}
+
+.menu ul{
+	margin:0;
+	list-style:none;
+	padding:0;
+	display:flex;
+	justify-content:center;
+		}
+
+.menu li {
+	border-right: 1px solid #fff;
+	transition:all 0.3s;}
+
+.menu li:first-child{
+	border-left: 1px solid #fff;}
+
+.menu li:hover {
+	background:rgba(255,255,255,0.3);
+	}
+
+.menu li:hover a {
+	color:#009AD0;}
+
+.menu li a {
+	font-family: 'Dosis', sans-serif;
+	display:block;
+	padding: 10px 15px;
+	color: #fff;
+	text-decoration:none;}
+
+.activo{
+	background:#DC7501 ;
+	color:red}
+	
+/* MINI MENU de PRODUCTOS */
+	
+.mini_menu {
+		display:flex;
+		justify-content:center;
+		flex-wrap:wrap;
+		
+		font-size: .9em;
+		font-family:arial;
+		}
+		
+		
+.mini_menu a {
+	color: #7A7878;
+	text-decoration:none;
+	font-weight:500;
+	}
+	
+.mini_menu a:hover {
+	color: red;
+	}			
+
+
+/* clase para nombre de menu en celular */
+.nombre_menu_cel{
+	display:none;}
+
+
+/* FIN DE MENU */
+
+.contenedor_s{
+	width:80%;
+	max-width:1200px;
+	margin:auto;}
+
+
+.cuadro_cen_index a {
+	text-decoration:none;
+	color:black;}
+
+.cuadro_cen_index a:hover {
+	text-decoration:none;
+	color:red;}
+
+
+
+.logo{
+	float:left;
+	padding-top:0.5em;
+	padding-left:1em;}
+
+.banner_superior > p{
+	text-align:center;
+	font-family: 'Oswald', sans-serif;}
+
+marquee {
+	background-color: orange;
+	color:#000;
+	font-family: 'Dosis', sans-serif;
+	height:25px;
+	line-height:25px;
+	}
+
+
+.clear {
+	clear:both;}
+
+/* CAJAS PARA PRODUCTOS */
+
+.contenedor_productos {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;}
+
+
+.caja-main{
+	width:200px;
+	height:290px;
+	border:1px solid red;
+	overflow:hidden;
+	margin-bottom:10px;
+	margin-right:10px;
+	}
+
+.caja-foto {
+	width:100%;
+	height:60%;
+	overflow:hidden;
+    }
+
+.centrado_img {
+    position: relative;
+    top:-50px;
+    left:-60px;
+    
+}
+
+
+.caja-texto {
+	height:100%;
+	padding:15px 5px;
+	background: #000;
+
+	}
+
+.caja-texto p{
+	font-family: 'Satisfy', cursive;
+	color: orange;
+	font-size: 1.5em;;
+	margin-top:3px;
+	font-weight:100;
+	text-align:center;
+	line-height:0.7;}
+
+.caja-texto span {
+	font-family: arial, sans-serif;
+	font-size: 0.5em;
+	letter-spacing:0.1em;
+	color:#fff;}
+
+	/* CAJA FRUTAS */
+
+.caja-jugos {
+	width:350px;
+	margin-left:30px;
+	height:700px;
+
+	border:5px solid gray;
+}
+
+.caja-jugos-fotos{
+	width:100%;
+	height:50%;
+	overflow:hidden;
+	}
+
+.caja-jugos-fotos>h3{
+	position:relative;
+	top:250px;
+	padding-left:10px;
+	font-size: 1.2em;
+	color: orange;
+	line-height:3em;
+	background: rgba(0,0,0,0.5);
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	z-index:100;
+	}
+
+.caja-jugos-fotos>img{
+	position:relative;
+	top:-70px;
+	width:100%;}
+
+.caja-jugos-texto{
+	padding:10px;
+	height:50%;
+	overflow:hidden;
+	}
+	
+.caja-jugos-texto p{
+	line-height:0.8em;}
+
+/* CAJA PARA FOTOS DE CLIENTE */
+
+.contenedormain-clientes{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	margin-bottom:5em;
+	}
+	
+.caja-foto-cliente {
+	margin-right:10px;
+	margin-bottom:10px;
+	width:250px;
+	height:150px;
+	overflow:hidden;
+	border:1px solid red;
+    }
+	
+.caja-foto-cliente-vip {
+	margin-right:10px;
+	margin-bottom:10px;
+	width:400px;
+	height:200px;
+	overflow:hidden;
+	border:1px solid red;
+    }
+
+
+
+
+/* FIN DE CAJA PARA FOTOS DE CLIENTES */
+
+/* SOCIAL IZQ ABSOLUTE */
+.social_superior{
+	position:fixed;
+	top:90px;
+	left:0px;
+	background-color:rgba(0,0,0,.4);
+	width:50px;
+	height:105px;
+	padding-left:10px;
+	line-height:60px;
+	z-index:1000;
+	border-radius:0 10px 10px 0;
+	}
+
+.social_superior a{
+	color:white;
+	margin-left:5px;}
+
+.social_superior a:hover{
+	color:steelblue;
+	margin-left:5px;}
+
+/* FIN SOCIAL IZQ ABSOLUTE  */
+
+
+article {
+	width:100%;
+    max-width:1150px;
+	margin:30px auto;
+	overflow:hidden;
+
+}
+
+.contenedor-banner {
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	
+		}
+		
+.contenedor-banner img {
+	margin:10px 0;
+	width:100%;}
+
+.jugoconleche {
+    position: relative;
+    top:-100px
+
+}
+
+
+
+.centrado {
+	/*max-width:950px;*/
+	margin:0 auto;
+	text-align:center;
+	position:relative;
+	}
+
+.title_index{
+	font-family: 'Satisfy', cursive;}
+
+.cuadro_cen_index {
+	/*float:left;*/
+	display:inline-block;
+	width:230px;
+	padding-top:20px;
+	margin-right:10px;
+	vertical-align:text-top;
+	}
+
+.cuadro_cen_index img {
+	padding:2px;
+	border:1px solid black;}
+
+.logros p {
+	padding: 0 10px;
+	font-size:0.8em;
+	}
+
+	/* FIN CENTRAL */
+
+
+/* linea divisoria horizontal */
+
+.linea {
+	border-bottom:1px solid gray;
+	margin:30px 0;}
+
+
+
+/*comienzo de FOOTER o PIE DE PAGINA*/
+footer{
+	width:100%;
+	height:500px;
+
+	bottom:0;
+	left:0;
+	padding-top:90px;
+	text-align:center;
+	background-color:#3E3C3C;
+
+
+	font-family: 'Dosis', sans-serif;
+	color:#fff;
+	}
+
+footer p{
+	color:#fff;
+	text-align:center;
+	}
+
+footer a {
+	color:#fff;
+	display:inline-block;
+	text-align:center;
+
+	text-decoration:none;
+	transition-duration:0.2s;
+	}
+
+footer a:hover {
+	color:steelblue;
+	text-decoration:none;
+	}
+
+footer .social {
+	margin-top:10px;
+}
+
+footer .social a  {
+	}
+
+.texto_direccion p{
+	font-size: 1.5em;
+	font-weight:bold;
+	}
+
+
+/*FIN DE FOOTER*/
+
+
+@media (max-width:768px) {
+
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;}
+
+html, body {
+padding:0;
+margin:0;
+height:100%;
+}
+
+
+
+
+
+.logo{
+display:block;
+}
+
+.logo img {
+width:100%;}
+
+.logo_sup{
+display:none;
+
+	}
+
+
+.derecha {
+position:absolute;
+display:block;
+top:10px;
+right:10px;
+color: white;
+}
+
+table {
+display:none;}
+
+.horario_cel {
+display:block;}
+
+header label {
+display:block;
+height:50px;
+z-index:100;}
+
+.menu {
+position:absolute;
+background:#DC7501;
+width:70%;
+margin-left:-70%;
+z-index:100;
+
+transition:all 0.5s;}
+
+.menu ul {
+flex-direction: column;
+}
+
+.menu li {
+border-top: 1px solid #fff;}
+
+.menu li:hover a {
+	color:#000;}
+
+#btn-menu:checked ~ .menu {
+margin:0;}
+
+.contenedor_am_1 {
+	/*float:left;*/
+	width:90%;
+	min-height:550px;
+	margin-right:20px;
+	margin-bottom:20px;
+	border:1px black solid;}
+
+
+	}
+	
+@media (max-width:380px){
+		.header-banner {
+display:none;}
+
+		.logo_movil{
+			display:block;
+			text-align:center;}
+		}
+	
+	
+	
+	
+	
+	/* CSS Document */
+
+.caja_bebidas {
+    text-align: left;
+    margin-right: 15px;    
+}
+
+.caja_bebidas:nth-child(3n){
+    margin-right: 0px;
+    
+}
+
+.caja_bebidas h3 {
+    margin:10px 0;
+    font-style: italic;
+    font-family: Arial;
+    background: rgba(254,0,0,0.8);
+    color:white;
+    padding: 10px 5px;
+
+}
+
+.texto_cen_carta {
+    display: flex;
+    justify-content: center;
+
+}
+
+h2 {
+    font-family: 'Satisfy', cursive;
+    font-size: 1.6em;
+    border-left: 50px solid orange;
+    padding-left: 5px;
+}
+
+.empresas>img{
+    float: left;
+    width:200px;
+    margin-right:5px;
+   /* border: 10px solid orange;*/
+    
+}
+
+.logo_derecha {
+    float:right;
+    background: rgba(255,255,255,0.5);
+    padding: 5px 20px;
+    border-radius: 5px;
+    
+}
+
+.foto-productos {
+    background-image: url("../img/foto_productos.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+/* Loader */
+.loader,
+.loader:before,
+.loader:after {
+  background: #ff8000;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader {
+  color: #ff8000;
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
